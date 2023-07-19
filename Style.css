@@ -1,0 +1,222 @@
+.Contenido{
+    height: 440px;
+    width: 580px;
+    background-image: url(IMG/Fondosinnube.jpg) ;
+    border: 1px solid black;
+    overflow: hidden;
+}
+#Techo_Falso{ 
+    background-image: url(IMG/Nubes.jpg);
+    height: 80px;
+    width: 580px;
+}
+
+#dino{
+    width: 30px;
+    height: 50px;
+    position: relative;
+    background-size: 30px 50px;
+    background-image: url(IMG/Dino2.png);
+    top: 70px;  
+}
+#desierto{
+    width: 580px;
+    height: 20px;
+    position: relative;
+    background-size: 6035px 80px;
+    background-image: url(img/Fondoarriba.jpg);
+    top: 230px;
+}
+#piso{
+    width: 580px;
+    height: 50px;
+    position: relative;
+    background-size: 150px 60px;
+    background-image: url(img/Fondoabajo.jpg);
+    top: 180px;
+}
+.saltar{
+    animation: saltar 0.5s linear;
+}
+
+@keyframes saltar{
+    0%{
+        top:60px;
+    }
+    10%{
+        top:50px;
+    }
+    11%{
+        top:40px;
+    }
+    12%{
+        top:30px;
+    }
+    13%{
+        top:20px;
+    }
+    20%{
+        top:10px;
+    }
+    21%{
+        top:5px;
+    }
+    25%{
+        top:-10px;
+    }
+    29%{
+        top:-30px;
+    }
+    30%{
+        top:-40px;
+    }
+    40%{
+        top:-50px;
+    }
+    50%{
+        top:-80px;
+    }
+    60%{
+        top:-80px;
+    }
+    70%{
+        top:-80px;
+    }
+    80%{
+        top:-80px;
+    }
+    90%{
+        top:-70px;
+    }
+    91%{
+        top:-60px;
+    }
+    92%{
+        top:-50px;
+    }
+    93%{
+        top:-40px;
+    }
+    94%{
+        top:-30px;
+    }
+    95%{
+        top:-10px;
+    }
+    100%{
+        top:60px;
+    }
+    
+}
+
+#cactus{
+width: 30px;
+height: 50px;
+position: relative;
+background-image: url(IMG/cactus.png);
+background-size: 30px 50px;
+left: 560px;
+top: 170px;
+
+animation: blocke infinite linear 1.5s;
+
+}
+
+@keyframes blocke {
+
+    0%{
+        left:580px;
+    }
+    100%{
+        left:-10px;
+    }
+
+    
+}
+#nubes{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    background-image: url(img/Nube.png);
+    background-size: 60px 60px;
+    left: 500px;
+    top: 10px;
+    
+   
+    animation: nubes infinite linear 6s;
+    }
+
+#Kunai{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        background-image: url(IMG/heli.png);
+        background-size: 40px 40px;
+        left: 580px;
+        top: 80px;
+        
+        animation-delay: 10s;
+        animation: kunai linear infinite 4s;
+
+        }
+
+    
+@keyframes nubes {
+    
+        0%{
+            left: 550px;
+        }
+        30%{
+            left: 450px;
+            top: 60px;
+        }
+        50%{
+            left: 300px;
+            top: 30px;
+        }
+        100%{
+            left: 0px;
+            top: 60px;
+        }
+    
+        
+    }
+@keyframes kunai {
+    
+        0%{
+            left: 550px;
+            top: 70px;
+        }
+        100%{
+            left: 0px;
+            top: 70px;
+        }
+    
+        
+    }
+
+#score{
+    top: 30px;
+    left: 500px;
+    position: absolute;
+    color: #000000;
+    font-family: Verdana;
+    font-size: 20px;
+}
+#vidacount{
+    top: 35px;
+    left: 32px;
+    position: absolute;
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 15px;
+}
+#vida{
+    background-image:url(IMG/vida.png);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: 12px;
+    background-size: 50px 50px;
+}
